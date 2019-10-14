@@ -45,11 +45,13 @@ class FibonacciTestCase(unittest.TestCase):
         string_invalid_input = "some_string"
         array_invalid_input = [50, 60]
         none_invalid_input = None
+        negative_invalid_input = -1
 
         # Act and Assert
         self.assertRaises(Exception, fibonacci, string_invalid_input)
         self.assertRaises(Exception, fibonacci, array_invalid_input)
         self.assertRaises(Exception, fibonacci, none_invalid_input)
+        self.assertRaises(Exception, fibonacci, negative_invalid_input)
 
 
 if __name__ == '__main__':
