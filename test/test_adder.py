@@ -1,8 +1,8 @@
 import unittest
-from src.Adder import add
+from src.adder import add
 
 
-class TestAdder(unittest.TestCase):
+class AdderTestCase(unittest.TestCase):
 
     def test_add(self):
         self.assertEqual(add(5, 6), 11, "Should be 11")
