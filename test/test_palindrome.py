@@ -22,7 +22,7 @@ class PalindromeTestCase(unittest.TestCase):
         expected_result = False
 
         # Act
-        result = is_palindrome(valid_input_1)
+        result = is_palindrome(checked_str)
 
         # Assert
         self.assertEqual(result, expected_result,
