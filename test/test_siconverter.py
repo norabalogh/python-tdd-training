@@ -35,7 +35,9 @@ class SiConverterTestCase(unittest.TestCase):
     def test_invalid_inputs(self):
         # Act and Assert
         self.assertRaises(Exception, siconverter, 'm', 'm',
-                          'm')  # how to add here more inputs?
+                          'm')
+        self.assertRaises(Exception, siconverter, 1, 1, 1)
+        self.assertRaises(Exception, siconverter, 1, 'ez', 'az')
 
 
 if __name__ == '__main__':
