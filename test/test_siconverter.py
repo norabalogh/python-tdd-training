@@ -32,12 +32,10 @@ class SiConverterTestCase(unittest.TestCase):
         self.assertEqual(result, expected_result,
                          "Result should be " + str(expected_result))
 
-   
-
     def test_invalid_inputs(self):
         # Act and Assert
-        self.assertRaises(Exception, siconverter, 'm', 'm', 'm') #how to add here more inputs?
-       
+        self.assertRaises(Exception, siconverter, 'm', 'm',
+                          'm')  # how to add here more inputs?
 
 
 if __name__ == '__main__':
