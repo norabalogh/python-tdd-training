@@ -48,10 +48,10 @@ class AgeCalcTestCase(unittest.TestCase):
         negative_invalid_input = -1
 
         # Act and Assert
-        self.assertRaises(Exception, fibonacci, string_invalid_input)
-        self.assertRaises(Exception, fibonacci, array_invalid_input)
-        self.assertRaises(Exception, fibonacci, none_invalid_input)
-        self.assertRaises(Exception, fibonacci, negative_invalid_input)
+        self.assertRaises(Exception, agecalc, string_invalid_input)
+        self.assertRaises(Exception, agecalc, array_invalid_input)
+        self.assertRaises(Exception, agecalc, none_invalid_input)
+        self.assertRaises(Exception, agecalc, negative_invalid_input)
 
 
 if __name__ == '__main__':
