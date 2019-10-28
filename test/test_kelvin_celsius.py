@@ -14,8 +14,8 @@ class KelvinToCelsiusTestCase(unittest.TestCase):
         result = kelvin_to_celsius(kelvin)
 
         # Assert
-        self.assertEqual(result, expected_celsius,
-                         "Result should be " + str(expected_celsius))
+        self.assertAlmostEqual(result, expected_celsius, 1,
+                               "Result should be " + str(expected_celsius))
 
     def test_kelvin_to_celsius_invalid_input(self):
         # Arrange
@@ -46,7 +46,7 @@ class KelvinToCelsiusTestCase(unittest.TestCase):
         # Act & Assert
         self.assertRaises(Exception, celsius_to_kelvin, celsius)
         self.assertRaises(Exception,
-                          kelvin_tcelsius_to_kelvino_celsius, string)
+                          celsius_to_kelvin, string)
 
 
 if __name__ == '__main__':
