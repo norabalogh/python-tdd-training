@@ -3,7 +3,7 @@ from src.kelvin_celsius import kelvin_to_celsius
 from src.kelvin_celsius import celsius_to_kelvin
 
 
-class PalindromeTestCase(unittest.TestCase):
+class KelvinToCelsiusTestCase(unittest.TestCase):
 
     def test_kelvin_to_celsius_valid_input(self):
         # Arrange
