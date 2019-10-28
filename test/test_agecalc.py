@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime, date
 from src.agecalc import agecalc
 
 
@@ -6,7 +7,9 @@ class AgeCalcTestCase(unittest.TestCase):
 
     def test_input_0(self):
         # Arrange
-        valid_input_0 = "1997 03 21"
+        today = date.today()
+        tested_year = today.year - 22
+        valid_input_0 = str(tested_year) + " 03 21"
         expected_result = 22
 
         # Act
@@ -18,7 +21,9 @@ class AgeCalcTestCase(unittest.TestCase):
 
     def test_input_1(self):
         # Arrange
-        valid_input_1 = "2018 10 19"
+        today = date.today()
+        tested_year = today.year - 1
+        valid_input_1 = str(tested_year) + " 10 19"
         expected_result = 1
 
         # Act
@@ -30,7 +35,9 @@ class AgeCalcTestCase(unittest.TestCase):
 
     def test_input_2(self):
         # Arrange
-        valid_input_2 = "2018 10 21"
+        today = date.today()
+        tested_year = today.year
+        valid_input_2 = str(tested_year) + " 10 21"
         expected_result = 0
 
         # Act
